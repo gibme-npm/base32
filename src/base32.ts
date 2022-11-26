@@ -21,7 +21,7 @@
 /** @ignore */
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
 
-export default class Base32 {
+export default abstract class Base32 {
     /**
      * Decodes the Base32 encoded string into a Buffer
      *
@@ -110,28 +110,6 @@ export default class Base32 {
 
         return result;
     }
-
-    /**
-     * Decodes the Base32 encoded string into a Buffer
-     *
-     * @param encoded
-     */
-    public decode (encoded: string): Buffer {
-        return Base32.decode(encoded);
-    }
-
-    /**
-     * Encodes the data into Base32
-     *
-     * @param data
-     * @param padding
-     * @param encoding
-     */
-    public encode (
-        data: string | Uint8Array | Buffer,
-        padding = true,
-        encoding: BufferEncoding = 'hex'
-    ): string {
-        return Base32.encode(data, padding, encoding);
-    }
 }
+
+export { Base32 };
