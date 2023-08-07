@@ -18,7 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import assert from 'assert';
+import * as assert from 'assert';
 import { describe, it } from 'mocha';
 import Base32 from '../src/base32';
 
@@ -34,13 +34,13 @@ describe('Test Base32', () => {
     it('Encoding', () => {
         const encoded = Base32.encode(expectedRaw);
 
-        assert(encoded === expectedEncoded);
+        assert.deepEqual(encoded, expectedEncoded);
     });
 
     it('Encoding [No Padding]', () => {
         const encoded = Base32.encode(expectedRaw, false);
 
-        assert(encoded === expectedResponseNoPadding);
+        assert.deepEqual(encoded, expectedResponseNoPadding);
     });
 
     it('Decoding', () => {
