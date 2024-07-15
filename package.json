@@ -1,6 +1,6 @@
 {
   "name": "@gibme/base32",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "description": "A simple base32 helper",
   "main": "dist/base32.js",
   "types": "dist/base32.d.ts",
