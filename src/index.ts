@@ -18,6 +18,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+import { Buffer } from 'buffer';
+
 /** @ignore */
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
 
@@ -112,4 +114,4 @@ export default abstract class Base32 {
     }
 }
 
-export { Base32 };
+export { Base32, Buffer };

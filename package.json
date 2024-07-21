@@ -1,6 +1,6 @@
 {
   "name": "@gibme/base32",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A simple base32 helper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -60,5 +60,8 @@
     "ts-node": "^10.9.2",
     "typedoc": "^0.25.7",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3"
   }
 }
