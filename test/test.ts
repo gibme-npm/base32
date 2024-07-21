@@ -20,7 +20,7 @@
 
 import * as assert from 'assert';
 import { describe, it } from 'mocha';
-import Base32 from '../src/base32';
+import Base32 from '../src/index';
 
 describe('Test Base32', () => {
     const expectedRaw = Buffer.from(
