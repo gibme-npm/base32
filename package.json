@@ -1,6 +1,6 @@
 {
   "name": "@gibme/base32",
-  "version": "1.0.12",
+  "version": "2.0.0",
   "description": "A simple base32 helper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://gibme-npm.github.io/base32/",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "engineStrict": true,
   "author": {
@@ -45,7 +45,7 @@
     "filename": "[name].min.js"
   },
   "devDependencies": {
-    "@gibme/auto-pack": "^0.4.2",
+    "@gibme/auto-pack": "^0.4.3",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.11.7",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
@@ -61,7 +61,5 @@
     "typedoc": "^0.25.7",
     "typescript": "^5.3.3"
   },
-  "dependencies": {
-    "buffer": "^6.0.3"
-  }
+  "dependencies": {}
 }

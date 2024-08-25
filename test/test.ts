@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2022, Brandon Lehmann <brandonlehmann@gmail.com>
+// Copyright (c) 2019-2024, Brandon Lehmann <brandonlehmann@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -18,14 +18,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import * as assert from 'assert';
+import assert from 'assert';
 import { describe, it } from 'mocha';
 import Base32 from '../src/index';
 
 describe('Test Base32', () => {
     const expectedRaw = Buffer.from(
         '02c0ded2bc1f1305fb0faac5e6c03ee3a1924234985427b6167ca569d13df435cfeb05f9d2',
-        'hex');
+        'hex').valueOf();
 
     const expectedEncoded = 'ALAN5UV4D4JQL6YPVLC6NQB64OQZEQRUTBKCPNQWPSSWTUJ56Q2472YF7HJA====';
 
