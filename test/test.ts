@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2022, Brandon Lehmann <brandonlehmann@gmail.com>
+// Copyright (c) 2019-2025, Brandon Lehmann <brandonlehmann@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -18,9 +18,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import * as assert from 'assert';
+import assert from 'assert';
 import { describe, it } from 'mocha';
-import Base32 from '../src/index';
+import Base32 from '../src';
 
 describe('Test Base32', () => {
     const expectedRaw = Buffer.from(
